@@ -1,2 +1,2 @@
-# zadatak.nikola.kula-
+# zadatak.nikola.kulaš
 Studentski zadatak
