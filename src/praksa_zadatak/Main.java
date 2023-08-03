@@ -13,7 +13,8 @@ public class Main {
 			loggedIn = Prijava.login(scanner);
 			if (loggedIn) {
 				Racun stanjeRacuna = new Racun("54321", 10000, "EUR");
-				Menu.showMenu(scanner, stanjeRacuna);
+				TransakcijaLista transakcijaLista = new TransakcijaLista();
+				Menu.showMenu(scanner, stanjeRacuna, transakcijaLista);
 				
 			}
 		}

@@ -22,4 +22,8 @@ public class Racun {
 	public String getValuta() {
 		return valuta;
 	}
+	
+	public void smanjiIznos(double svota) {
+		iznos -= svota;
+	}
 }
