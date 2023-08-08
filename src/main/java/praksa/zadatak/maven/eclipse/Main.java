@@ -1,15 +1,15 @@
 package praksa.zadatak.maven.eclipse;
 
-import java.util.Scanner;
-
-import  praksa.zadatak.maven.eclipse.Menu;
-import  praksa.zadatak.maven.eclipse.Prijava;
-import  praksa.zadatak.maven.eclipse.Racun;
-import  praksa.zadatak.maven.eclipse.TransakcijaLista;
+import java.util.Scanner; 
+import org.apache.log4j.Logger;  
 
 public class Main {
 	
+    private static final Logger logger = Logger.getLogger(Main.class);
+    
 	public static void main(String[] args) {
+
+		logger.info("Zapocet program");
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -21,10 +21,14 @@ public class Main {
 				TransakcijaLista transakcijaLista = new TransakcijaLista();
 				Menu.showMenu(scanner, stanjeRacuna, transakcijaLista);
 				
+			} else {
+				logger.warn("Neuspjela prijava");
 			}
 		}
 		
 		scanner.close();
 		
+        logger.info("Program zavrsen");
+        
 	}
 }
