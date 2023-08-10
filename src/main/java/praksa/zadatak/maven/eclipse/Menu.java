@@ -15,6 +15,7 @@ public class Menu {
 			System.out.println("2 - Stanje racuna");
 			System.out.println("3 - Placanje");
 			System.out.println("4 - Povijest transakcija");
+			System.out.println("5 - Tecajna lista");
 		
 			int choice = Integer.parseInt(scanner.nextLine());
 		
@@ -41,6 +42,10 @@ public class Menu {
 					
 				case 4:
 					showPovijestTransakcija(scanner, transakcijaLista);
+					break;
+				
+				case 5:
+	                TecajnaListaIspis.showTecajnaLista();
 					break;
 					
 				default:
